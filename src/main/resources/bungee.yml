@@ -1,0 +1,5 @@
+name: AuroraBungee
+version: '${project.version}'
+main: net.orbitdev.aurorabungee.AuroraBungee
+description: AuroraBungee is a plugin for bungee utilities.
+author: kryunek

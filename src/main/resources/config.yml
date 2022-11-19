@@ -1,0 +1,113 @@
+#################################################
+#             Aurora Configuration              #
+#          Discord: discord.orbitdev.net        #
+#################################################
+
+no-console: "&cThis command cannot execute from console."
+
+
+staff:
+  join: "&d[Aurora] &d{player} &7join to &f{server}&7."
+  switch: "&d[Aurora] &d{player} &7switch from &f{server-from} &7to &f{server}&7."
+
+stafflist:
+  message:
+    - "&7&m-------------------------------------------"
+    - "&dOrbit Network &fPlayers Online: &d {players-total}"
+    - "&DOrbit Network &5Staff Online: &d {staffs-total}"
+    - ""
+    - "&5Staffs: &d{staffs}"
+    - "&7&m-------------------------------------------"
+
+staffalert:
+  usage: "&cUsage: /staffalert <message>"
+  message: "&d[Alert] &7(&oStaffOnly&7) &r{message}"
+
+alert:
+  usage: "&cUsage: /alert <message>"
+  message: "&d[Alert] &r{message}"
+
+userinfo:
+  usage: "&cUsage: /userinfo <player>"
+  not-found: "&cPlayer not found."
+  message:
+    - "&7&m+-----------------------------------------+"
+    - "&d&lUserInfo &7(&o{player}&7)"
+    - ""
+    - "&5• &dUUID: &f{UUID}"
+    - "&5• &dPing: &f{ping}"
+    - "&5• &dIP: &f{IP}"
+    - "&5• &dCountry: &f{country}"
+    - "&5• &dServer: &f{server}"
+    - "&7&m+-----------------------------------------+"
+
+
+maintenance:
+  on-message: "&d[Maintenance] &atoggled on."
+  off-message: "&d[Maintenance] &ctoggled off."
+  cannot-join: "&4&lMAINTENANCE\n&7\n&cThe server is currently in maintenance.\n&cJoin our discord to stay updated\n&fdiscord.orbitdev.net"
+  server:
+    version: "&4&lMaintenance"
+    motd:
+      - "&5&lOrbit Development | &4&lMaintenance\n&dStay tunned on &fdiscord.orbitdev.net"
+
+default:
+  server:
+    motd:
+      - "                 &5&lOrbit Development &7[1.7-1.16]\n                         &fdiscord.orbitdev.net"
+
+hub:
+  server: "hub"
+  already-connected: "&cYou are already connected to this server!"
+
+find:
+  usage: "&cUsage: /find <player>"
+  message: "&d[Find] &d{player} &7is connected to &f{server}"
+  click-message: "&7Click to connect &f{server}"
+  not-found: "&cPlayer not found."
+
+geoip:
+  usage: "&cUsage: /geoip <player>"
+  message: "&d[GeoIP] &d{player} &7is from &f{country}."
+  click-message: "&7Click to see her country in a map."
+  not-found: "&cPlayer not found."
+
+staffchat:
+  message: "&d[SC] &d{player} &7(&o{server}&7) &r{message}"
+  on-message: "&7Staff chat toggled &aon&7."
+  off-message:  "&7Staff chat toggled &coff&7."
+
+stream:
+  usage: "&cUsage: /stream <link>"
+  cooldown: 300 #Seconds
+  cooldown-message: "&cYou can't use this command at the moment, please try again in {cooldown} seconds."
+  message:
+    - "&7&m+-----------------------------------------+"
+    - ""
+    - "&d{player} &7is now streaming in &f{server}"
+    - "&r{link}"
+    - ""
+    - "&7&m+-----------------------------------------+"
+
+
+report:
+  usage: "&cUsage: /report <player> <reason>"
+  not-found: "&cPlayer not found."
+  specify-message: "&cSpecify the reason of the report."
+  cannot-report-self: "&cYou cannot report you!"
+  staff-message: "&d[Report] &7(&o{server}&7) &d{reporter} &7has reported &d{reported} &7for &f{reason}"
+  click-message: "&7Click to connect &f{server}"
+  sent-message: "&aYour report has been sent successfully!"
+  cooldown:  120 #Seconds
+  cooldown-message: "&cYou can't use this command at the moment, please try again in {cooldown} seconds."
+
+request:
+  usage: "&cUsage: /request <reason>"
+  staff-message: "&d[Request] &7(&o{server}&7) &d{requester} &7has request help: &f{reason}"
+  click-message: "&7Click to connect &f{server}"
+  sent-message: "&aYour request has been sent successfully!"
+  cooldown: 120 #Seconds
+  cooldown-message: "&cYou can't use this command at the moment, please try again in {cooldown} seconds."
+
+
+
