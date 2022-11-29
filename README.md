@@ -1,4 +1,5 @@
-# Aurora
+## ```❓ What is Aurora?```
+
 Aurora BungeeCord staff and simple utilities plugin
 
 ## Credits
